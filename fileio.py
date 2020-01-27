@@ -18,9 +18,25 @@
 #         print(line, end='')
 #         line = jabber.readline()
 
+# with open("sample.txt") as jabber:
+#     lines = jabber.readlines()
+# print(lines)
+#
+# for line in lines:
+#     print(line, end='')
+
 with open("sample.txt") as jabber:
     lines = jabber.readlines()
 print(lines)
 
-for line in lines:
+for line in lines[::-1]:
     print(line, end='')
+
+with open("sample.txt") as jabber:
+    lines = jabber.read()
+print(lines)
+
+for line in lines[::-1]:
+    print(line, end='')
+
+
